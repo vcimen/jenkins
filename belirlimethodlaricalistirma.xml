@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite - belirli methodlar">
+    <test name="Test - method test">
+        <classes>
+            <class name="com.hypnotes.tests.US00_SmoketestTest">
+                <methods>
+                    <!-- Method eklemek için "include" -->
+                    <!-- Sadece include ettiğimiz methodlar çalışır -->
+                    <include name="loginTest"></include>
+                </methods>
+            </class>
+                <class name="com.hypnotes.tests.US013_AccountManagementTest">
+                <methods>
+                    <!-- Method eklemek için "include" -->
+                    <!-- Sadece include ettiğimiz methodlar çalışır -->
+                    <include name="validPhoneTest"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
